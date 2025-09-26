@@ -1,234 +1,91 @@
-Resume — SAJA PT
+**Resume — SAJA PT**
 
-This project is a simple and elegant resume website created using HTML for structure and an external CSS file for styling.
-It’s designed to display personal details, education, skills, and projects in a clean, professional format.
+This project is a personal resume website created using simple HTML and styled with an external CSS file. It serves as a digital portfolio to showcase personal details, education, skills, and projects in a clean and professional format.
 
-📄 Project Description
+**Project Overview**
 
-The project contains a single HTML file (index.html) that holds all the content of the resume.
-It is organized into meaningful sections to keep it neat and easy to maintain.
+The resume is designed as a single-page website that is lightweight and responsive.
+It’s ideal for anyone who wants to present their profile online without complex frameworks.
 
-The resume includes:
+**The page contains:**
+A header with name, title, photo, and contact details
 
-Header with profile photo and contact details
+A professional summary introducing background and expertise
 
-Professional Summary
+An education section listing academic qualifications
 
-Education Background
+A skills section highlighting technical and soft skills
 
-Technical Skills
+A projects section featuring key projects with descriptions and technologies used
 
-Projects Portfolio
+**Structure and Sections**
 
-The design is lightweight and responsive, which means it can adapt to different screen sizes (desktop, tablet, or phone).
+**1. Header**
+The header displays the most important information at the top:
 
-🔍 Code Breakdown
+Name and title: “SAJA PT – MVoc Software Application Development”
 
-Below is a section-by-section explanation of how the HTML code works.
+Profile photo for a personal touch
 
-1. <!DOCTYPE html>
+Contact details such as location, email, phone number, and a GitHub link
 
-This tells the browser that the file is an HTML5 document.
-It ensures the page is interpreted using modern HTML standards.
+**2. Professional Summary**
+A short paragraph that introduces educational background, technical strengths, and professional goals.
+This section highlights problem-solving abilities, teamwork, and commitment to learning modern technologies like Django, Flutter, and MySQL.
 
-2. <html lang="en">
+**3. Education**
+Lists academic achievements in chronological order:
 
-The opening <html> tag wraps all the content of the web page.
+MVoc in Software Application Development at Cochin University of Science and Technology
 
-The lang="en" attribute specifies the language of the document as English.
+Bachelor of Computer Applications (BCA) at Malabar College of Advanced Studies
 
-3. <head> Section
+Each entry includes the institution name and timeline.
 
-The <head> contains metadata about the web page (not displayed on the page directly).
+**4. Skills**
+A collection of technical and personal skills, displayed as labeled tags (or “pills”) for better readability.
+Skills include Flutter, MySQL, Python Django, HTML, Excel, Database Management, Git, and soft skills such as communication and adaptability.
 
-Key elements inside <head>:
+**5. Projects**
+Highlights notable projects developed:
 
-<meta charset="UTF-8"> — Makes sure the page can display a wide range of characters (including emojis like 📍 or ✉️).
+MedLens: A health application to scan, analyze, and predict illnesses using machine learning, Flutter, MySQL, and cloud technologies.
 
-<title>Resume — SAJA PT</title> — Sets the title shown on the browser tab.
+Maternity Cue: A pregnancy tracking application with weekly updates, personalized insights, recipes, and FAQs using Flutter and Firebase.
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-Ensures the page scales correctly on phones and tablets.
+Each project includes a title, tagline, timeline, features, and the technologies used.
 
-<link rel="stylesheet" href="css/style.css">
-Links an external CSS file (style.css) stored in the css folder. This file is used to style the page (colors, fonts, layout, etc.).
+**Visual Layout**
 
-4. <body> Section
+The website has a clean card-style design with sections neatly separated for readability.
+It is responsive, meaning it adjusts well to desktop, tablet, and mobile screens.
 
-Everything visible on the page is inside the <body> tag.
+**Purpose**
+This project demonstrates the ability to build and host a personal resume webpage:
 
-Main Layout
-<div class="container">
-  <main class="card">
-    ...
-  </main>
-</div>
+Makes a résumé accessible online
 
+Provides an easy way to share projects and skills with recruiters or collaborators
 
-<div class="container"> acts as the overall wrapper that keeps everything centered and organized.
+Serves as a foundation for future enhancements, such as adding interactivity or styling upgrades
 
-<main class="card"> is the main content area styled like a card (handled by CSS).
+**How to Use**
+Anyone can download or clone the project and replace the placeholder content:
 
-5. <header> — Profile Header and Contact Information
+Update the name, profile photo, and contact details
 
-The header section holds the name, title, photo, and contact details.
+Modify the education, skills, and project information
 
-<div class="profile-header">
-  <div class="title">
-    <h1>SAJA PT</h1>
-    <p class="subtitle">Mvoc software Apllication development</p>
-  </div>
-  <div class="photo">
-    <img src="assets/PIC.jpg" alt="Profile Picture">
-  </div>
-</div>
+Adjust styles via the linked CSS file for personal branding
 
+**Author**
+Created by SAJA PT as part of personal portfolio development.
 
-<h1> — Displays the name SAJA PT in large text.
-
-<p class="subtitle"> — Shows the title Mvoc Software Application Development as a subtitle.
-
-<img src="assets/PIC.jpg"> — Displays the profile picture stored in the assets folder.
-
-Contact Section
-<div class="contact">
-  <div class="left-contact">
-    <span>📍 Kochi, India</span>
-    <span>✉️ <a href="mailto:sajaabbaspt@gmail.com">sajaabbaspt@gmail.com</a></span>
-  </div>
-  <div class="right-contact">
-    <span>☎️ +91 8138800371</span>
-    <span>🔗 <a href="https://github.com/Saja-abbas">GitHub: Saja-abbas</a></span>
-  </div>
-</div>
-
-
-Divided into two parts: left-contact (location and email) and right-contact (phone and GitHub link).
-
-mailto: makes the email clickable so it opens the default email app.
-
-GitHub link opens in a new tab because of target="_blank".
-
-6. Professional Summary Section
-<section class="section">
-  <h2>Professional Summary</h2>
-  <p class="summary"> ... </p>
-</section>
-
-
-This section provides a brief introduction about education, skills, and professional interests.
-
-7. Education Section
-<section class="section">
-  <h2>Education</h2>
-  <div class="item">
-    <h3>Mvoc Software Application Development</h3>
-    <div>Cochin University of Science and Technology, Kochi, Kerala</div>
-    <div class="time">July-10-2025</div>
-
-    <h3>Bachelor of Computer Applications</h3>
-    <div class="loc">Malabar College of Advanced Studies, Vengara, Malappuram, Kerala</div>
-    <div class="time">Sept 2022 – Mar 2025</div>
-  </div>
-</section>
-
-
-Lists the educational qualifications with institute names and timeline.
-
-8. Skills Section
-<section class="section">
-  <h2>Skills</h2>
-  <div>
-    <span class="pill">Flutter</span>
-    <span class="pill">MySQL</span>
-    ...
-  </div>
-</section>
-
-
-Displays technical and soft skills in pill-shaped tags for readability.
-Examples: Flutter, MySQL, Python Django, Adaptability.
-
-9. Projects Section
-<section class="section">
-  <h2>Projects</h2>
-
-  <div class="item">
-    <h3>MedLens <span class="tagline">“Scan, Analyze, and Stay Ahead of Illness”</span></h3>
-    <div class="time">Jul 2024 – Jan 2025</div>
-    <ul>
-      <li>Developed a health app...</li>
-      ...
-    </ul>
-  </div>
-</section>
-
-
-Highlights major projects with:
-
-Project Title
-
-Tagline
-
-Timeline
-
-Bullet-point features
-
-Technologies used
-
-Two projects are showcased:
-
-MedLens — A health app using Machine Learning and Flutter.
-
-Maternity Cue — A pregnancy tracking app using Flutter and Firebase.
-
-📂 Folder Structure
-resume-project/
-│
-├── index.html        # Main resume page
-├── css/
-│   └── style.css     # Stylesheet for design
-└── assets/
-    └── PIC.jpg       # Profile picture
-
-🖥️ How It Works
-
-When you open index.html in a browser, the HTML loads the content.
-
-The CSS file applies styling (colors, fonts, layout).
-
-The image is displayed from the assets folder.
-
-Links for email and GitHub are clickable and interactive.
-
-🚀 How to View
-
-Clone the repository or download the files.
-
-Open index.html in any web browser.
-
-Make sure the css folder and assets folder stay in the same directory as index.html.
-
-✨ Customization
-
-You can easily modify:
-
-Your name, title, contact info in the <header> section.
-
-Add/remove skills using <span class="pill">.
-
-Add new projects by copying the <div class="item"> block.
-
-Change the profile picture in the assets folder.
-
-📬 Author
-
-Name: SAJA PT
+**For contact:**
 
 Email: sajaabbaspt@gmail.com
 
 GitHub: Saja-abbas
 
-📜 License
-
-Free to use and modify for personal or academic purposes.
+**License**
+This resume page is free to use and modify for personal or educational purposes.
